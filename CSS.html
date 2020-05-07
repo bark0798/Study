@@ -4,44 +4,53 @@
     <meta charset="utf-8">
     <title>Webの勉強-CSS</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164626172-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164626172-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-164626172-1');
-</script>
-
+      gtag('config', 'UA-164626172-1');
+    </script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="HTML.html">HTML</a></li>
-      <li><a href="CSS.html">CSS</a></li>
-      <li><a href="JavaScript.html">JavaScript</a></li>
-    </ol>
-    <h2>HTML用語</h2>
-    <p><ul>
-      <li><strong>!DOCTYPE html & html</strong> : 基本</li>
-      <li><strong>head</strong> : ページの頭</li>
-      utf-8の設定及びタイトル(ホームページの名前)を指定する。<br>
-      例）meta charset="utf-8"<br>
-      <li><strong>body</strong> : ページの中身</li>
-      <ul type="square">
-        <li><strong>h1~h6</strong> : 文字の大きさ及び太さ(ページ内のタイトル)</li>
-        <li><strong>ol(Ordered List) & li(List Item)</strong> : 例)1,2,3,4...番号を付ける</li>
-        <li><strong>ul(UnOrdered List) & li(List Item)</strong> : 例)■,□,○,●を付ける</li>
-          例）■　＝　ul type="square"<br>
-          例）●　＝　ul type="circle"<br>
-        <li><strong>img</strong> : イメージを追加</li>
-          例）img src="イメージのファイル名" width="○○px OR ○○％"<br>
-        <li><strong>a(anchor)</strong> : リンク</li>
-        　例）a href="ネット住所" target:"_blank" title="タイトル"<br>
+    <div id="grid">
+      <ol>
+        <li><a href="HTML.html">HTML</a></li>
+        <li><a href="CSS.html"
+            style="color:red; text-decoration:underline;">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+      </ol>
+      <div id="article">
+        <h2>CSS用語</h2>
+        <p><ul>
+            <li><strong>書き方</strong></li>
+              → headのところ ＜style＞a{  }＜/style＞<br>
+              <img src="CSS用語.jpg" alt="CSS用語の英語" width="300px;"> 　
+            <li><strong>color</strong> : 文字の色</li>
+            例）headのところ : ＜style＞a{<strong>color:black;</strong>}＜/style＞<br>
+            例）bodyのところ : ＜a style=<strong>"color:red";</strong>＞<br>
+            <li><strong>デコレーション</strong> : 文字の下線のような</li>
+            例）headのところ : ＜style＞a{<strong>text-decoration:none;</strong>}＜/style＞<br>
+            例）bodyのところ : ＜a style=<strong>"text-decoration:under";</strong>＞<br>
+            <li><strong>img</strong> : イメージを追加</li>
+            例）img src="イメージのファイル名" width="○○px OR ○○％"<br>
+            <li><strong>a(anchor)</strong> : リンク</li>
+            例）a href="ネット住所" target:"_blank" title="タイトル"<br>
             →target:"_blank" : 新しいブラウザで実行（省略可）<br>
             →title="タイトル" : リンクにマウスを置いたら現れる物 <br>
-      </ul>
-    </ul></p>
+            <li><strong>Box Model</strong></li>
+            <img src="BoxModel.jpg" alt="BoxModel" width="300px;" height="150px;">
+            <li><strong>Grid</strong> : グループ化</li>
+            →divの設定名に display: Grid;
+            <li><strong>div</strong> : デザインするだけ他のtagとは違う</li>
+            例）＜div＞＜/div＞
+          </ul>
+        </ul></p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
       <script>

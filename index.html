@@ -4,30 +4,42 @@
     <meta charset="utf-8">
     <title>Webの勉強</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164626172-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164626172-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-164626172-1');
-</script>
-
+      gtag('config', 'UA-164626172-1');
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="HTML.html">HTML</a></li>
-      <li><a href="CSS.html">CSS</a></li>
-      <li><a href="JavaScript.html">JavaScript</a></li>
-    </ol>
-    <h2>勉強中</h2>
-    <img src="study.jpg" width="500px;">
-    <p>
-    <ul>
-      <li>img おすすめ : unsplash.com</li>
-      <li>server　おすすめ : github.com</li>
-        他の検索 : free static web hosting　→検索(他のサーバー)<br>
-    </ul> </p>
+    <div id="grid">
+      <ol>
+        <li><a href="HTML.html">HTML</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+      </ol>
+      <div id="article">
+        <h2>勉強中</h2>
+        <img src="study.jpg" width="500px;">
+        <p>
+        <ul>
+          <li>img おすすめ : unsplash.com</li>
+          <li>server　おすすめ : github.com</li>
+            他の検索 : free static web hosting　→検索(他のサーバー)<br>
+          <li>コメント欄 おすすめ : Disqus.com</li>
+        </ul> </p>
+        </div>
+      </div>
   </body>
 </html>
